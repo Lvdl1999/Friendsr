@@ -14,18 +14,16 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<Friend> friendList;
-    private static final String TAG = "friendclicked";
+    private ArrayList<Friend> friendList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        GridView gv = findViewById(R.id.grid);
-        gv.setOnItemClickListener(new GridItemClickListener());
+        GridView gridView = findViewById(R.id.grid);
+        gridView.setOnItemClickListener(new GridItemClickListener());
 
-        //friendList = new ArrayList<>();
         friendList = new ArrayList<Friend>(Arrays.asList(
 
                 new Friend("Tim",
@@ -85,32 +83,23 @@ public class MainActivity extends AppCompatActivity {
 
         ));
 
-//      search layout
-        GridView gridView = findViewById(R.id.grid);
-//      adapter accepteert 3 dingen: context, template voor item (hoe plaatje eruit moet zien) en list van friends als objects
+        // The adapter accepts 3 things: the contect, template for item and list of friends as objects
         ArrayAdapter<Friend> adapter = new FriendsAdapter(getApplicationContext(), R.layout.list_item, friendList);
-//      Op de grid zet ik nu de adapter op de grid
         gridView.setAdapter(adapter);
-
-
-//        clicklistener voor details over iemand
-//        plaatje, naam en rating (detailactivity)
-
     }
 
-
+    /**
+     * Method that changes from main to profile activity when a person gets clicked
+     * and returns clicked person.
+     */
     private class GridItemClickListener implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             Friend clickedFriend = (Friend) parent.getItemAtPosition(position);
-            Log.d(TAG, "clickedfriend: friendclicked " + clickedFriend.getName());
 
             Intent intent = new Intent(MainActivity.this, Profile_Activity.class);
             intent.putExtra("clicked_friend", clickedFriend);
             startActivity(intent);
-
-
-
         }
     }
 }
