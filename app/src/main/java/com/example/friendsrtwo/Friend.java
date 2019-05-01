@@ -15,7 +15,7 @@ public class Friend implements Serializable {
         rating = 3.0f;
     }
 
-    // Getters and setters
+    // Getters and setters for name, bio and rating
 
     public String getName() {
         return name;
@@ -31,14 +31,6 @@ public class Friend implements Serializable {
 
     public void setBio(String bio) {
         this.bio = bio;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public float getRating() {
