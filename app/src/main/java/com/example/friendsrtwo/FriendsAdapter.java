@@ -35,11 +35,14 @@ public class FriendsAdapter extends ArrayAdapter {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
+        // Gets picture in convertview
         ImageView image = convertView.findViewById(R.id.picture);
         TextView text = convertView.findViewById(R.id.name);
 
+        // Get current friend of the list by its position
         Friend currentUser = userList.get(position);
 
+        // set image and name in the grid to the current user
         image.setImageResource(currentUser.getDrawableId());
         text.setText(currentUser.getName());
 
