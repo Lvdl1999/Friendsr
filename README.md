@@ -28,3 +28,6 @@ The picture will show again, only bigger. Also next to her name, her bio will sh
 We'll give Renske 5 stars out of 5, ofcourse ;)  
 When leaving her and return, the rating will stay safed. 
 
+<img width="180" alt="Schermafbeelding 2019-05-01 om 16 22 54" src="https://user-images.githubusercontent.com/47352487/57023046-52cee980-6c31-11e9-9087-38141ffae7d9.png">
+
+
