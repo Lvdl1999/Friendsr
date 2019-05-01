@@ -17,6 +17,8 @@ There is also an option to rate a person. The rating goes from 0 to 5 and is tot
 1. Open the app
 You'll see a picture of everyone with their name.
 
+<img width="281" alt="Schermafbeelding 2019-05-01 om 16 20 11" src="https://user-images.githubusercontent.com/47352487/57022923-f4097000-6c30-11e9-90fd-da87217806cc.png">
+
 2. Click on Renske
 The picture will show again, only bigger. Also next to her name, her bio will show. 
 
