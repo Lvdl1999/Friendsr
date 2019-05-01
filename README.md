@@ -20,7 +20,9 @@ You'll see a picture of everyone with their name.
 <img width="170" alt="Schermafbeelding 2019-05-01 om 16 20 11" src="https://user-images.githubusercontent.com/47352487/57022923-f4097000-6c30-11e9-90fd-da87217806cc.png">
 
 2. Click on Renske
-The picture will show again, only bigger. Also next to her name, her bio will show. 
+The picture will show again, only bigger. Also next to her name, her bio will show.
+
+<img width="170" alt="Schermafbeelding 2019-05-01 om 16 20 20" src="https://user-images.githubusercontent.com/47352487/57023009-3632b180-6c31-11e9-89c4-13cc40e008f5.png">
 
 3. Rating Renske
 We'll give Renske 5 stars out of 5, ofcourse ;)  
