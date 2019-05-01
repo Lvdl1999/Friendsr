@@ -10,9 +10,11 @@ Like Martijn, who said he’s always cold, good to know…. ;)
 The code contains an Arraylist called “friendList” so it’s possible to add or remove users to the app. 
 
 The user can click on each one to see a bigger photo and get some more information about this person. 
-This was programmed with the 'GridItemClickListener' in the MainActivity. Intent makes it possible to change activity, in this case
-from the Main to Profile_Avtivity. 'Putextra' also returns a person (the person that was clicked) to use their information in the Profile_Activity.
-There is also an option to rate a person. The rating goes from 0 to 5 and is totally up to you. All the user has to do is click on a star of his/hers rating. 
+This was programmed with the 'GridItemClickListener' in the MainActivity. Intent makes it possible to change activity, in this case from the Main to Profile_Avtivity. 'Putextra' also returns a person (the person that was clicked) to use their information in the Profile_Activity.
+
+The layout of list_item.xml serves as a template for the adapter. The picture and text in grid_item.xml are the ones that will be rendered when the adapter does not specify something else at run time. But since we will use the adapter to dynamically specify that each rendition of a grid item should contain that friend’s specific name and photo, it's possible to use one of the friends in the xml to see what the layout would look like.
+
+There is also an option to rate a person. The rating goes from 0 to 5 and is totally up to you. All the user has to do is click on the amount of stars for his/hers rating. 
 
 1. Open the app
 You'll see a picture of everyone with their name.
